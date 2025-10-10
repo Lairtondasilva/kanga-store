@@ -264,7 +264,7 @@
         /* Hero Section Centralizada */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, rgba(250,245,240,0.9), rgba(255,255,255,0.9)),
+            background: linear-gradient(135deg, rgba(250,245,240,0.8), rgba(255,255,255,0.8)),
                         url('kanga-background.png');
             background-size: cover;
             background-position: center;
@@ -288,7 +288,7 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 1200px;
             position: relative;
             z-index: 2;
         }
@@ -327,14 +327,14 @@
             color: var(--text-light);
             margin-bottom: 2.5rem;
             font-weight: 400;
-            max-width: 600px;
+            max-width: 800px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .cta-group {
             display: flex;
-            gap: 1rem;
+            gap: 2rem;
             justify-content: center;
             flex-wrap: wrap;
             margin-bottom: 3rem;
@@ -342,7 +342,7 @@
 
         .hero-stats {
             display: flex;
-            gap: 2rem;
+            gap: 4rem;
             justify-content: center;
             flex-wrap: wrap;
         }
