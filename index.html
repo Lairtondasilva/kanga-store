@@ -4,120 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KANGA STORE - Não é só moda. É identidade.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header -->
-    <header>
+   <header>
         <a href="#hero" class="logo">
-            <div class="logo-icon"><img src="logo.jpg" alt="kanga-store logo"></div>
+            <div class="logo-icon"><img src="logo.jpg" alt="Kanga Store"></div>
             KANGA STORE
         </a>
-        <nav>
+        
+        <!-- Navegação Desktop -->
+        <nav class="desktop-nav">
             <a href="#sobre">Sobre</a>
             <a href="#features">Recursos</a>
             <a href="#vip">Grupo VIP</a>
             <a href="#contato">Contato</a>
+            <a href="#vip" class="nav-cta">Entrar no Grupo</a>
         </nav>
+
+        <!-- Menu Hamburguer -->
+        <button class="menu-toggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navegação Mobile -->
+        <nav class="mobile-nav">
+            <a href="#sobre">Sobre</a>
+            <a href="#features">Recursos</a>
+            <a href="#vip">Grupo VIP</a>
+            <a href="#contato">Contato</a>
+            <a href="#vip" class="nav-cta">Entrar no Grupo</a>
+        </nav>
+
+        <!-- Overlay -->
+        <div class="nav-overlay"></div>
     </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="hero-content">
+            <div class="hero-badge">🎨 Coleção Exclusiva 2025</div>
             <h1>Não é só moda.<br>É identidade.</h1>
-            <p>Cada peça é um pedaço da nossa história.</p>
-            <a href="#vip" class="cta-button">Ajustar</a>
+            <p>Cada peça é um pedaço da nossa história, criada para quem valoriza autenticidade e estilo único.</p>
+            <div class="cta-group">
+                <a href="#vip" class="cta-button">
+                    <i class="fas fa-crown"></i>
+                    Entrar no Grupo VIP
+                </a>
+                <a href="#sobre" class="cta-button secondary">
+                    <i class="fas fa-play"></i>
+                    Conhecer Mais
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Clientes Satisfeitos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Peças Exclusivas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Avaliação Positiva</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="sobre" class="about">
+    <section id="sobre" class="section about">
+        <div class="section-header">
+            <h2 class="section-title">Sobre a Kanga Store</h2>
+            <p class="section-subtitle">Mais do que uma marca de moda, um movimento de expressão individual</p>
+        </div>
         <div class="about-content">
-            <h2>Sobre a Kanga Store</h2>
-            <p>O que há de especial sobre o seu produto, empresa ou serviço? Use este espaço para destacar as coisas que diferenciam você da concorrência, seja uma característica especial, uma filosofia única ou prêmios e reconhecimentos recebidos. Pense nisso como sua abordagem para chamar a atenção do leitor.</p>
+            <p style="text-align: center; font-size: 1.1rem; line-height: 1.8; max-width: 800px; margin: 0 auto;">
+                Na Kanga Store, acreditamos que a moda vai além das tendências passageiras. Cada peça é cuidadosamente 
+                elaborada para contar uma história e expressar identidade. Combinando design inovador com qualidade 
+                premium, criamos roupas que não apenas vestem, mas também empoderam e inspiram. Nossa missão é 
+                proporcionar uma experiência única para quem busca autenticidade e estilo pessoal em cada detalhe.
+            </p>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
-        <div>
-
-            <h2>Ajustar</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Qualidade Premium</h3>
-                    <p>Escreva uma característica essencial do aplicativo que está sendo anunciado.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💎</div>
-                    <h3>Design Exclusivo</h3>
-                    <p>Escreva uma característica essencial do aplicativo que está sendo anunciado.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>Autenticidade</h3>
-                    <p>Escreva uma característica essencial do aplicativo que está sendo anunciado.</p>
-                </div>
+    <section id="features" class="section features">
+        <div class="section-header">
+            <h2 class="section-title">Por que Escolher a Kanga</h2>
+            <p class="section-subtitle">Excelência em cada detalhe para uma experiência única</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Qualidade Premium</h3>
+                <p>Materiais selecionados e acabamento impecável garantem durabilidade e conforto excepcionais em cada peça.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💎</div>
+                <h3>Design Exclusivo</h3>
+                <p>Peças únicas criadas com identidade visual forte e conceitos autorais que se destacam no mercado.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Autenticidade</h3>
+                <p>Estilo que reflete personalidade genuína, longe das massificações do mercado fashion convencional.</p>
             </div>
         </div>
     </section>
 
-       <!-- Creator Section -->
-    <section class="creator">
+    <!-- Creator Section -->
+    <section class="section creator">
         <div class="creator-content">
             <div class="creator-image">
-                <img src="vitor.jpg" alt="">
+                <img src="vitor.jpg" alt="José Vitor - Fundador da Kanga Store">
             </div>
             <div class="creator-text">
-                <h2>O criador</h2>
-                <p>Me chamo José Vitor, criador da Kanga Store, uma marca que une moda, autenticidade e design. Sou formado em TI e tenho experiência na área de design, o que me permite transformar ideias em estilo. A Kanga Store nasceu pra mostrar que vestir-se bem é mais do que aparência — é identidade. Nosso emblema já diz tudo: não é só moda, é identidade. Cada peça é um pedaço da nossa história, feita pra quem carrega orgulho de ser quem é.</p>
-                <a href="https://www.instagram.com/vitorsouuzah" class="cta-button" target="_blank" style="margin-top: 2rem;">Saiba Mais</a>
+                <h2>O Criador</h2>
+                <p>Me chamo José Vitor, criador da Kanga Store, uma marca que une moda, autenticidade e design. Sou formado em TI e tenho experiência na área de design, o que me permite transformar ideias em estilo.</p>
+                <p>A Kanga Store nasceu pra mostrar que vestir-se bem é mais do que aparência — é identidade. Nosso emblema já diz tudo: não é só moda, é identidade. Cada peça é um pedaço da nossa história, feita pra quem carrega orgulho de ser quem é.</p>
+                <a href="https://www.instagram.com/vitorsouuzah" class="cta-button" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    Seguir no Instagram
+                </a>
             </div>
         </div>
     </section>
 
     <!-- VIP Section -->
-    <section id="vip" class="vip">
+    <section id="vip" class="section vip">
         <div class="vip-content">
             <div class="vip-text">
                 <h2>GRUPO VIP</h2>
-                <p>Quer estar sempre por dentro da Kanga Store? Entre no nosso grupo VIP e tenha acesso a enquetes, novidades e produtos exclusivos. Venha ser um de nós!</p>
-                <a href="https://www.instagram.com/vitorsouuzah" class="cta-button" target="_blank">Acessar Grupo VIP</a>
+                <p>Quer estar sempre por dentro das novidades da Kanga Store? Entre no nosso grupo VIP e tenha acesso a benefícios exclusivos:</p>
+                <ul class="vip-benefits">
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Lançamentos exclusivos antes de todo mundo
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Descontos especiais de até 30% para membros VIP
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Enquetes e participação ativa em novas coleções
+                    </li>
+                    <li>
+                        <i class="fas fa-check"></i>
+                        Conteúdo exclusivo sobre tendências e estilo
+                    </li>
+                </ul>
+                <a href="https://www.instagram.com/vitorsouuzah" class="cta-button" target="_blank">
+                    <i class="fas fa-crown"></i>
+                    Acessar Grupo VIP
+                </a>
             </div>
             <div class="vip-image">
-                <img src="grand-logo.png" alt="logo kanga Store">
+                <img src="grand-logo.png" alt="Kanga Store - Grupo VIP">
             </div>
         </div>
     </section>
 
-
-     <!-- partnerships Section -->
-    <section id="partnerships" class="partnerships">
-        <div>
-
-            <h2>Parcerias</h2>
-            <div class="partnerships-grid">
-                <div class="partnership-card">
-                    <div class="partnership-icon">
-                        <img src="wesley-cantor.jpg" alt="">
+    <!-- Partnerships Section CORRIGIDA -->
+    <section id="partnerships" class="section partnerships">
+        <div class="section-header">
+            <h2 class="section-title">Nossas Parcerias</h2>
+            <p class="section-subtitle">Trabalhamos com talentos incríveis que compartilham nossa visão de moda autêntica</p>
+        </div>
+        <div class="partnerships-grid">
+            <!-- Card Wesley Cantor -->
+            <div class="partnership-card">
+                <div class="partnership-card-inner">
+                    <div class="partnership-front">
+                        <div class="partnership-header">
+                            <div class="partnership-icon">
+                                <img src="wesley-cantor.jpg" alt="Wesley Cantor">
+                            </div>
+                            <div class="partnership-info">
+                                <h3>Wesley Cantor</h3>
+                                <div class="partnership-role">Modelo </div>
+                                <p class="partnership-description">Com seu estilo único e autenticidade, Wesley traz vida às nossas peças com uma energia contagiante que ressoa com nossa marca.</p>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Wesley Cantor</h3>
-                    <p>Modelo</p>
-                </div>
-                <div class="partnership-card">
-                    <div class="partnership-icon">
-                        <img src="lairton.png" alt="">
+                    <div class="partnership-back">
+                        <div class="instagram-logo">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="instagram-handle">
+                            @<span>wesleycantoor</span>
+                        </div>
+                        <a href="https://instagram.com/wesleycantoor" class="follow-button" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            Seguir no Instagram
+                        </a>
                     </div>
-                    <h3>Lairton Silva</h3>
-                    <p>Modelo</p>
                 </div>
-                <!-- <div class="partnership-card">
-                    <div class="partnership-icon">✨</div>
-                    <h3>Autenticidade</h3>
-                    <p>Escreva uma característica essencial do aplicativo que está sendo anunciado.</p>
-                </div> -->
+            </div>
+            
+            <!-- Card Lairton Silva -->
+            <div class="partnership-card">
+                <div class="partnership-card-inner">
+                    <div class="partnership-front">
+                        <div class="partnership-header">
+                            <div class="partnership-icon">
+                                <img src="lairton.png" alt="Lairton Silva">
+                            </div>
+                            <div class="partnership-info">
+                                <h3>Lairton Silva</h3>
+                                <div class="partnership-role">Modelo</div>
+                                <p class="partnership-description">Lairton personifica a essência da Kanga Store com sua capacidade de transformar cada peça em uma declaração de estilo pessoal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partnership-back">
+                        <div class="instagram-logo">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="instagram-handle">
+                            @<span>lairton_07</span>
+                        </div>
+                        <a href="https://instagram.com/lairton_07" class="follow-button" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            Seguir no Instagram
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -126,24 +245,60 @@
     <footer id="contato">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Telefone</h3>
-                <p>(87) 99149 - 2211</p>
+                <h3>Contato</h3>
+                <p><i class="fas fa-phone"></i> (87) 99149-2211</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:kangastoree@gmail.com">kangastoree@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Floresta, PE</p>
             </div>
             <div class="footer-section">
-                <h3>E-mail</h3>
-                <a href="mailto:kangastoree@gmail.com">kangastoree@gmail.com</a>
+                <h3>Links Rápidos</h3>
+                <p><a href="#sobre">Sobre Nós</a></p>
+                <p><a href="#features">Coleções</a></p>
+                <p><a href="#vip">Grupo VIP</a></p>
+                <p><a href="#partnerships">Parcerias</a></p>
             </div>
             <div class="footer-section">
-                <h3>Social</h3>
+                <h3>Redes Sociais</h3>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/kangastoree" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/kangastoree" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kanga Store. Todos os direitos reservados. | Não é só moda. É identidade.</p>
+        </div>
     </footer>
-       <script>
+
+    <script>
+        // Menu Hamburguer
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const mobileLinks = document.querySelectorAll('.mobile-nav a');
+
+        function toggleMenu() {
+            menuToggle.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', toggleMenu);
+
+        // Fechar menu ao clicar nos links
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
         // Scroll Animation
         const observerOptions = {
             threshold: 0.1,
@@ -159,25 +314,6 @@
             });
         }, observerOptions);
 
-        // Observe elements
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hero elements are already visible
-            const heroElements = document.querySelectorAll('.hero h1, .hero p, .hero .cta-button');
-            heroElements.forEach(el => el.classList.add('fade-in'));
-
-            // Observe other sections
-            const elementsToObserve = document.querySelectorAll(
-                '.about h2, .about p, ' +
-                '.features h2, .feature-card, ' +
-                '.vip-text h2, .vip-text p, .vip-image, ' +
-                '.creator-image, .creator-text, ' +
-                '.partnerships h2, .partnership-card, ' +
-                'footer'
-            );
-
-            elementsToObserve.forEach(el => observer.observe(el));
-        });
-
         // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
@@ -188,20 +324,55 @@
             }
         });
 
-        // Smooth scroll for navigation links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+        // Smooth scroll para navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId.startsWith('#')) {
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
+            });
+        });
+
+        // Inicializar observadores quando o DOM carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Observar elementos para animação
+            const elementsToObserve = document.querySelectorAll(
+                '.hero-content > *, ' +
+                '.section-header, ' +
+                '.feature-card, ' +
+                '.partnership-card, ' +
+                '.vip-text > *, ' +
+                '.vip-image, ' +
+                '.creator-image, ' +
+                '.creator-text > *, ' +
+                '.footer-content'
+            );
+
+            elementsToObserve.forEach(el => {
+                el.classList.add('loading');
+                observer.observe(el);
+            });
+
+            // Animar elementos do hero com delay
+            const heroElements = document.querySelectorAll('.hero-content > *');
+            heroElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('visible');
+                }, index * 200);
+            });
+        });
+
+        // Preload de imagens críticas
+        window.addEventListener('load', function() {
+            const criticalImages = ['logo.jpg', 'vitor.jpg', 'grand-logo.png', 'wesley-cantor.jpg', 'lairton.png'];
+            criticalImages.forEach(src => {
+                const img = new Image();
+                img.src = src;
             });
         });
     </script>
